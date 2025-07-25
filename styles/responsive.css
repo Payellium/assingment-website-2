@@ -4,81 +4,177 @@
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
-   font-style: normal;
+  font-weight: <weight>;
+  font-style: normal;
   font-variation-settings:
     "wdth" 100;
 }
-
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  font-weight: <weight>;
   font-style: normal;
 }
 
-    
-
-
-/* navigation bar */
-header nav{
-    width: 1140px;
-    height: 70px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
-.web-logo{
-    width: 8.5rem;
-    height: 5rem;
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.nav-box{
+
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 .nav-list{
-    list-style: none;
     display: flex;
-    gap: 1.2rem;
-
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
 }
 nav ul li a{
     text-decoration: none;
-    color: black;
 }
-.nav-icon{
-    width: 1.5rem;
-    height: 1.5rem;
+nav ul li img{
+    width: 24px;
+    height: 24px;
 }
 #item-1{
     color: #252432;
-    font-weight: 700;
 }
 #item-2, #item-3{
-    color:#8987A1 ;
-}
-#item-4, #item-5{
-    color: #000000;
+    color: #8987A1;
 }
 
 /* banner section */
 .banner{
     display: flex;
     align-items: center;
-    width: 1140px;
-    height: 460px;
-    margin-top: 120px;
-   
+    justify-content: space-between;
+    margin-top: 100px;
 }
-.banner-heading{
-    font-weight: 800px;
-    font-size: 65px;
-    color: #000000;
-}
-.fresh{
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
     color: #E95A08;
+}
+#always{
+    color: black;
 }
 .banner-description{
     color: rgba(0, 0, 0, 0.5);
-    font-size: 22px;
+    font-size: 1.375rem;
+}
+.banner-image {
+    width: 570px;
+    height: 355px;
+}
+
+
+/* card-section */
+.card-image{
+    width: 270px;
+    height: 320px;
+}
+.plant-title{
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+#our{
+    color: #E95A08;
+}
+.plant-des{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.375rem;
+}
+.btn{
+    background-color: #E95A08;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    width: 270px;
+    height: 50px;
+    padding: 26px 50px;
+}
+.card-name{
+    margin-left: 75px;
+}
+.card-price{
+    margin-left: 100px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+    margin-top: 50px;
+}
+.plant-section{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive website-smaller device */
+@media screen and (max-width:576px) {
+    .navbar #item-1, #item-2, #item-3{
+        display: none;
+    }
+   
+    
+    
+    
+   
+    
+    .banner{
+        flex-direction: column-reverse;
+        
+    }
+    .banner-image{
+        
+        width: 100%;
+        height: auto;
+        display: block;
+        
+    }
+    .banner-title{
+        font-size: 1.5rem;
+    }
+    .banner-description{
+        font-size: 0.875rem;
+    }
+    .banner-details{
+        width: 100%;
+        margin-top: 20px;
+        text-align: ;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-image{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
 }
