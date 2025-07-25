@@ -126,12 +126,102 @@ nav ul li img{
     margin-top: 100px;
 }
 
+/* plant lover section */
+.plant-lover-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.flower-store{
+    position: relative;
+    z-index: 1;
+}
+.badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    z-index: 2;
+    top: 75px;
+    right: 75px;
+    transform: translate(-130%, -75%);
+    
+}
 
 
+.plant-lover-section img{
+   /* max-width: 540px;
+   width: 100%;
+   height: auto; */
+   width: 540px;
+   height: 600px;
+   margin-right: 100px;
+}
+.plant-lover-title{
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+.plant-lover-list li{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.375rem;
+    margin-top: 20px;
+}
+.plant-lover-list{
+    gap: 20px;
+}
 
+/* latest deal section */
+.image-box{
+    display: flex;
+    gap: 50px;
+}
+.dbl-img{
+    gap: 20px;
+}
+#image-1, #image-2, #image-3{
+    border-radius: 14px;
+}
+#image-2{
+    margin-top: 25px;
+}
+.child-1 p, .child-2 p, .child-3 p{
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+}
+.child-3 p{
+    font-size: 2.5rem;
+    justify-items: center;
+    
+}
 
-
-
+.parent-1, .parent-2, .parent-3{
+    position: relative;
+    display: inline-block;
+}
+.parent-1 a, .parent-2 a, .parent-3 a{
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-left: 50px;
+}
+.parent-3 a{
+    font-size: 1.7rem;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.child-1, .child-2, .child-3{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
 
 
 
@@ -154,8 +244,7 @@ nav ul li img{
         
         width: 100%;
         height: auto;
-        display: block;
-        
+       
     }
     .banner-title{
         font-size: 1.5rem;
@@ -176,5 +265,14 @@ nav ul li img{
         height: auto;
         display: block;
     }
-    
+    .plant-lover-section{
+        flex-direction: column;
+    }
+    .badge{
+        display: none;
+    }
+    .plant-lover-section img{
+        width: 100%;
+        height: auto;
+    }
 }
