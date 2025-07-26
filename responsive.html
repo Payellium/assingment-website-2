@@ -6,8 +6,8 @@
     <title>Responsive Website</title>
     <link rel="stylesheet" href="styles/responsive.css">
 </head>
-<body class="container">
-    <header>
+<body>
+    <header class="header-section">
         <nav class="navbar">
             <img src="assets/logo.png" alt="">
             <ul class="nav-list">
@@ -32,7 +32,7 @@
        
 
     </header>
-    <main>
+    <main class="main-section">
          <section>
             <div class="plant-section">
                 <h1 class="plant-title noto-serif-font"><span id="our">Our</span> Plants</h1>
@@ -107,8 +107,8 @@
             <img class="badge" src="assets/trusted-badge.png" alt="">
         </section>
         <section>
-            <h1>Latest  Deals</h1>
-            <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            <h1 class="deal-heading noto-serif-font"><span id="latest">Latest</span>  Deals</h1>
+            <p class="deal-details inter-font">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br>classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             <div class="image-box">
                 <div class="dbl-img">
                     <div class="parent-1">
@@ -139,6 +139,18 @@
                 </div>
             </div>
         </section>
+        
     </main>
+    <footer>
+        <section class="join-now">
+            <div class="content">
+                <h1 class="massage">Join the colorful Bunch</h1>
+                <form class="join-form">
+                    <input type="email" placeholder="Write email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
