@@ -239,7 +239,7 @@ nav ul li img{
     margin-bottom: 75px;
     margin-top: 1rem;
 }
-/* Footer Section */
+
 /* Join now section */
 .massage{
     font-weight: 700;
@@ -277,7 +277,40 @@ nav ul li img{
     cursor: pointer;
 }
 
+/* Footer Section */
+.footer-section{
+    display: flex;
+    gap: 100px;
+    max-width: 1140px;
+    width: 100%;
+    
+    margin: 0 auto;
+}
+ .footer-description{
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer-logo{
+    max-width: 135px;
+    width: 100%;
+    height: auto;
+}
+.footer-2 ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.footer-2 ul li{
+    color: rgba(107, 114, 128, 1);
+    font-size: 1.25rem;
+}
 
+.footer-3 img{
+    margin-right: 20px;
+   
+}
+.footer-logo{margin-bottom: 20px;}
 
 
 /* responsive website-smaller device */
@@ -349,4 +382,16 @@ nav ul li img{
         width: 100%;
         height: auto;
     }
+
+    .footer-section{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .footer-2 ul{
+        grid-template-columns: 1fr;
+    }
+    .footer-3 img{
+        display: block;
+    }
+   
 }
